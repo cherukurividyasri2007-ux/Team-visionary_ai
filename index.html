@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visionary AI | Creator Intelligence Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        <div class="logo-icon">V</div>
+        <div>
+            <h2>Visionary AI</h2>
+            <span>Creator Intelligence</span>
+        </div>
+    </div>
+
+    <div class="workspace">
+        <small>WORKSPACE</small>
+    </div>
+
+    <nav>
+
+        <button class="nav-item active" data-page="dashboard">
+            <span>🏠</span>
+            Dashboard
+        </button>
+
+        <button class="nav-item" data-page="discovery">
+            <span>🔎</span>
+            Creator Discovery
+        </button>
+
+        <button class="nav-item" data-page="verification">
+            <span>🛡️</span>
+            License Verification
+        </button>
+
+        <button class="nav-item" data-page="brief">
+            <span>🎙️</span>
+            AI Brief Builder
+        </button>
+
+        <button class="nav-item" data-page="match">
+            <span>🤝</span>
+            Smart Match
+        </button>
+
+        <button class="nav-item" data-page="pipeline">
+            <span>📋</span>
+            Campaign Pipeline
+        </button>
+
+        <button class="nav-item" data-page="shortlist">
+            <span>❤️</span>
+            Shortlist
+        </button>
+
+        <div class="sidebar-divider"></div>
+
+        <button class="nav-item" data-page="settings">
+            <span>⚙️</span>
+            Settings
+        </button>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="help-card">
+            <div class="help-icon">?</div>
+            <div>
+                <strong>Need help?</strong>
+                <p>Talk to our AI assistant.</p>
+            </div>
+        </div>
+
+        <div class="user-profile">
+
+            <div class="avatar">VS</div>
+
+            <div class="user-info">
+                <strong>Visionary Studio</strong>
+                <span>Brand Manager</span>
+            </div>
+
+            <button class="more-btn">⋮</button>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+    <!-- TOPBAR -->
+
+    <header class="topbar">
+
+        <div>
+            <h1 id="pageTitle">Dashboard</h1>
+            <p id="pageSubtitle">
+                Welcome back! Here's what's happening with your campaigns.
+            </p>
+        </div>
+
+        <div class="top-actions">
+
+            <button class="notification-btn">
+                🔔
+                <span class="notification-dot"></span>
+            </button>
+
+            <button class="create-btn" onclick="openBriefPage()">
+                + Create Brief
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <section id="dashboard" class="page active-page">
+
+        <!-- Stats -->
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">👥</div>
+
+                <div>
+                    <span>Total Creators</span>
+                    <h2>2,840</h2>
+                    <small class="positive">↑ 12.5% this month</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">📢</div>
+
+                <div>
+                    <span>Active Campaigns</span>
+                    <h2>24</h2>
+                    <small class="positive">↑ 8.2% this month</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+
+                <div>
+                    <span>Verified Creators</span>
+                    <h2>1,936</h2>
+                    <small class="positive">↑ 18.4% this month</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">⏳</div>
+
+                <div>
+                    <span>Pending Reviews</span>
+                    <h2>18</h2>
+                    <small class="warning-text">Needs attention</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Grid -->
+
+        <div class="dashboard-grid">
+
+            <!-- Recent campaigns -->
+
+            <div class="panel campaigns-panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Recent Campaigns</h3>
+                        <p>Track your latest campaign activity.</p>
+                    </div>
+
+                    <button class="text-btn" onclick="showPage('pipeline')">
+                        View All →
+                    </button>
+
+                </div>
+
+                <div class="campaign-list">
+
+                    <div class="campaign-row">
+
+                        <div class="campaign-brand brand-saree">
+                            TS
+                        </div>
+
+                        <div class="campaign-info">
+                            <strong>Traditional Silk Collection</strong>
+                            <span>Telangana Silks • 8 creators</span>
+                        </div>
+
+                        <div class="campaign-status">
+                            <span class="status active">Active</span>
+                            <div class="mini-progress">
+                                <div style="width:72%"></div>
+                            </div>
+                            <small>72%</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="campaign-row">
+
+                        <div class="campaign-brand brand-jewel">
+                            LJ
+                        </div>
+
+                        <div class="campaign-info">
+                            <strong>Festival Jewellery 2026</strong>
+                            <span>Lalitha Jewellery • 12 creators</span>
+                        </div>
+
+                        <div class="campaign-status">
+                            <span class="status review">Review</span>
+                            <div class="mini-progress">
+                                <div style="width:54%"></div>
+                            </div>
+                            <small>54%</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="campaign-row">
+
+                        <div class="campaign-brand brand-food">
+                            SF
+                        </div>
+
+                        <div class="campaign-info">
+                            <strong>Festive Food Stories</strong>
+                            <span>Satya Foods • 6 creators</span>
+                        </div>
+
+                        <div class="campaign-status">
+                            <span class="status draft">Draft</span>
+                            <div class="mini-progress">
+                                <div style="width:25%"></div>
+                            </div>
+                            <small>25%</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Actions -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>Quick Actions</h3>
+                        <p>Start something new.</p>
+                    </div>
+
+                </div>
+
+                <div class="quick-actions">
+
+                    <button onclick="showPage('discovery')">
+                        <span>🔎</span>
+                        <div>
+                            <strong>Find Creators</strong>
+                            <small>Discover the perfect match</small>
+                        </div>
+                    </button>
+
+                    <button onclick="showPage('brief')">
+                        <span>🎙️</span>
+                        <div>
+                            <strong>AI Brief Builder</strong>
+                            <small>Create a campaign brief</small>
+                        </div>
+                    </button>
+
+                    <button onclick="showPage('verification')">
+                        <span>🛡️</span>
+                        <div>
+                            <strong>Verify License</strong>
+                            <small>Check creator credentials</small>
+                        </div>
+                    </button>
+
+                    <button onclick="showPage('match')">
+                        <span>🤝</span>
+                        <div>
+                            <strong>Smart Match</strong>
+                            <small>AI powered recommendations</small>
+                        </div>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Creator Portfolio -->
+
+        <div class="panel portfolio-panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h3>Featured Traditional Creators</h3>
+                    <p>Discover creators perfect for your next campaign.</p>
+                </div>
+
+                <button class="text-btn" onclick="showPage('discovery')">
+                    Explore Creators →
+                </button>
+
+            </div>
+
+            <div class="creator-grid">
+
+                <div class="creator-card">
+
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80">
+
+                    <div class="creator-card-content">
+
+                        <div class="creator-name">
+                            <strong>Ananya Rao</strong>
+                            <span class="verified">✓</span>
+                        </div>
+
+                        <span>Fashion • Hyderabad</span>
+
+                        <div class="creator-stats">
+                            <span>⭐ 4.9</span>
+                            <span>128K followers</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="creator-card">
+
+                    <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=700&q=80">
+
+                    <div class="creator-card-content">
+
+                        <div class="creator-name">
+                            <strong>Meghana Devi</strong>
+                            <span class="verified">✓</span>
+                        </div>
+
+                        <span>Jewellery • Vijayawada</span>
+
+                        <div class="creator-stats">
+                            <span>⭐ 4.8</span>
+                            <span>92K followers</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="creator-card">
+
+                    <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=700&q=80">
+
+                    <div class="creator-card-content">
+
+                        <div class="creator-name">
+                            <strong>Sravani Reddy</strong>
+                            <span class="verified">✓</span>
+                        </div>
+
+                        <span>Lifestyle • Guntur</span>
+
+                        <div class="creator-stats">
+                            <span>⭐ 4.9</span>
+                            <span>76K followers</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="creator-card">
+
+                    <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80">
+
+                    <div class="creator-card-content">
+
+                        <div class="creator-name">
+                            <strong>Harika Srinivas</strong>
+                            <span class="verified">✓</span>
+                        </div>
+
+                        <span>Traditional • Chennai</span>
+
+                        <div class="creator-stats">
+                            <span>⭐ 4.7</span>
+                            <span>64K followers</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Videos -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h3>Traditional Campaign Videos</h3>
+                    <p>Preview creator campaign content.</p>
+                </div>
+
+            </div>
+
+            <div class="video-grid">
+
+                <div class="video-card">
+                    <video controls>
+                        <source src="videos/festival_fashion_offer.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+
+                    <div class="video-info">
+                        <strong>Festival Fashion Campaign</strong>
+                        <span>Traditional fashion • Demo</span>
+                    </div>
+                </div>
+
+
+                <div class="video-card">
+                    <video controls>
+                        <source src="videos/lalitha_jewellery_festival.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+
+                    <div class="video-info">
+                        <strong>Festival Jewellery Campaign</strong>
+                        <span>Jewellery • Demo</span>
+                    </div>
+                </div>
+
+
+                <div class="video-card">
+                    <video controls>
+                        <source src="videos/satya_digital_festival.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+
+                    <div class="video-info">
+                        <strong>Festive Brand Story</strong>
+                        <span>Food & lifestyle • Demo</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DISCOVERY ================= -->
+
+    <section id="discovery" class="page">
+
+        <div class="page-heading">
+            <div>
+                <h2>Creator Discovery</h2>
+                <p>Find creators based on niche, location and audience.</p>
+            </div>
+        </div>
+
+        <div class="search-box">
+
+            <div class="search-input">
+                🔎
+                <input
+                    type="text"
+                    id="creatorSearch"
+                    placeholder="Search creators, niche or location..."
+                    oninput="filterCreators()"
+                >
+            </div>
+
+            <select id="categoryFilter" onchange="filterCreators()">
+                <option value="all">All Categories</option>
+                <option value="fashion">Fashion</option>
+                <option value="jewellery">Jewellery</option>
+                <option value="food">Food</option>
+                <option value="lifestyle">Lifestyle</option>
+            </select>
+
+            <select id="locationFilter" onchange="filterCreators()">
+                <option value="all">All Locations</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="vijayawada">Vijayawada</option>
+                <option value="guntur">Guntur</option>
+                <option value="chennai">Chennai</option>
+            </select>
+
+        </div>
+
+
+        <div class="discovery-grid" id="discoveryGrid">
+
+            <div class="discovery-card"
+                 data-category="fashion"
+                 data-location="hyderabad"
+                 data-name="Ananya Rao">
+
+                <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80">
+
+                <div class="discovery-content">
+
+                    <div class="creator-name">
+                        <strong>Ananya Rao</strong>
+                        <span class="verified">✓</span>
+                    </div>
+
+                    <p>Traditional Fashion Creator</p>
+
+                    <div class="creator-meta">
+                        <span>📍 Hyderabad</span>
+                        <span>👥 128K</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Sarees</span>
+                        <span>Fashion</span>
+                        <span>Festivals</span>
+                    </div>
+
+                    <div class="card-actions">
+                        <button class="secondary-btn"
+                                onclick="viewCreator('Ananya Rao')">
+                            View Profile
+                        </button>
+
+                        <button class="heart-btn"
+                                onclick="toggleShortlist('Ananya Rao')">
+                            ♡
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="discovery-card"
+                 data-category="jewellery"
+                 data-location="vijayawada"
+                 data-name="Meghana Devi">
+
+                <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=700&q=80">
+
+                <div class="discovery-content">
+
+                    <div class="creator-name">
+                        <strong>Meghana Devi</strong>
+                        <span class="verified">✓</span>
+                    </div>
+
+                    <p>Jewellery & Lifestyle Creator</p>
+
+                    <div class="creator-meta">
+                        <span>📍 Vijayawada</span>
+                        <span>👥 92K</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Jewellery</span>
+                        <span>Bridal</span>
+                        <span>Festivals</span>
+                    </div>
+
+                    <div class="card-actions">
+
+                        <button class="secondary-btn"
+                                onclick="viewCreator('Meghana Devi')">
+                            View Profile
+                        </button>
+
+                        <button class="heart-btn"
+                                onclick="toggleShortlist('Meghana Devi')">
+                            ♡
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="discovery-card"
+                 data-category="lifestyle"
+                 data-location="guntur"
+                 data-name="Sravani Reddy">
+
+                <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=700&q=80">
+
+                <div class="discovery-content">
+
+                    <div class="creator-name">
+                        <strong>Sravani Reddy</strong>
+                        <span class="verified">✓</span>
+                    </div>
+
+                    <p>Indian Lifestyle Creator</p>
+
+                    <div class="creator-meta">
+                        <span>📍 Guntur</span>
+                        <span>👥 76K</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Lifestyle</span>
+                        <span>Food</span>
+                        <span>Culture</span>
+                    </div>
+
+                    <div class="card-actions">
+
+                        <button class="secondary-btn"
+                                onclick="viewCreator('Sravani Reddy')">
+                            View Profile
+                        </button>
+
+                        <button class="heart-btn"
+                                onclick="toggleShortlist('Sravani Reddy')">
+                            ♡
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="discovery-card"
+                 data-category="fashion"
+                 data-location="chennai"
+                 data-name="Harika Srinivas">
+
+                <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80">
+
+                <div class="discovery-content">
+
+                    <div class="creator-name">
+                        <strong>Harika Srinivas</strong>
+                        <span class="verified">✓</span>
+                    </div>
+
+                    <p>Traditional Fashion Creator</p>
+
+                    <div class="creator-meta">
+                        <span>📍 Chennai</span>
+                        <span>👥 64K</span>
+                    </div>
+
+                    <div class="tags">
+                        <span>Silk</span>
+                        <span>Temple</span>
+                        <span>Culture</span>
+                    </div>
+
+                    <div class="card-actions">
+
+                        <button class="secondary-btn"
+                                onclick="viewCreator('Harika Srinivas')">
+                            View Profile
+                        </button>
+
+                        <button class="heart-btn"
+                                onclick="toggleShortlist('Harika Srinivas')">
+                            ♡
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VERIFICATION ================= -->
+
+    <section id="verification" class="page">
+
+        <div class="page-heading">
+
+            <div>
+                <h2>License Verification</h2>
+                <p>Verify creator identity, license and campaign eligibility.</p>
+            </div>
+
+            <span class="verified-badge">✓ Secure Verification</span>
+
+        </div>
+
+
+        <div class="verification-layout">
+
+            <div class="panel verification-panel">
+
+                <div class="passport-header">
+
+                    <div class="passport-logo">
+                        V
+                    </div>
+
+                    <div>
+                        <small>VISIONARY AI</small>
+                        <h3>Creator License Passport</h3>
+                    </div>
+
+                    <span class="passport-status">
+                        VERIFIED
+                    </span>
+
+                </div>
+
+
+                <div class="passport-profile">
+
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=400&q=80">
+
+                    <div>
+                        <h2>Ananya Rao <span class="verified">✓</span></h2>
+                        <p>Traditional Fashion Creator</p>
+                        <span>Creator ID: VA-CR-10294</span>
+                    </div>
+
+                </div>
+
+
+                <div class="verification-items">
+
+                    <div>
+                        <span>✓</span>
+                        <div>
+                            <strong>Identity Verified</strong>
+                            <small>Government ID verified</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <div>
+                            <strong>Creator License</strong>
+                            <small>License active until Dec 2026</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <div>
+                            <strong>Brand Safety</strong>
+                            <small>No major violations detected</small>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <div>
+                            <strong>Content Rights</strong>
+                            <small>Commercial usage enabled</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="passport-footer">
+                    <span>Last verified: Today, 09:42 AM</span>
+                    <button onclick="showToast('License passport downloaded successfully!')">
+                        Download Passport
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h3>Verification Workflow</h3>
+                <p class="muted">Automated creator verification process.</p>
+
+                <div class="timeline">
+
+                    <div class="timeline-item completed">
+                        <span>1</span>
+                        <div>
+                            <strong>Creator Submitted</strong>
+                            <small>Profile information received</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <span>2</span>
+                        <div>
+                            <strong>Identity Verification</strong>
+                            <small>Identity successfully verified</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <span>3</span>
+                        <div>
+                            <strong>License Validation</strong>
+                            <small>License checked against records</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item completed">
+                        <span>4</span>
+                        <div>
+                            <strong>AI Safety Review</strong>
+                            <small>Content safety screening complete</small>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item current">
+                        <span>5</span>
+                        <div>
+                            <strong>Brand Approval</strong>
+                            <small>Ready for campaign selection</small>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BRIEF ================= -->
+
+    <section id="brief" class="page">
+
+        <div class="page-heading">
+
+            <div>
+                <h2>AI Brief Builder</h2>
+                <p>Turn your campaign idea into a professional creator brief.</p>
+            </div>
+
+        </div>
+
+
+        <div class="brief-layout">
+
+            <div class="panel">
+
+                <div class="brief-title">
+                    <span>🎙️</span>
+                    <div>
+                        <h3>Voice → Pro Brief</h3>
+                        <p>Speak your campaign idea and let AI structure it.</p>
+                    </div>
+                </div>
+
+                <button class="voice-btn" id="voiceButton" onclick="startVoice()">
+                    🎙️ Start Speaking
+                </button>
+
+                <div class="voice-status" id="voiceStatus">
+                    Click the microphone and describe your campaign.
+                </div>
+
+                <textarea
+                    id="campaignIdea"
+                    placeholder="Example: I want a traditional Sankranti campaign for a silk saree brand..."
+                ></textarea>
+
+                <button class="primary-btn full-btn" onclick="generateBrief()">
+                    ✨ Generate Professional Brief
+                </button>
+
+            </div>
+
+
+            <div class="panel generated-brief">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h3>AI Generated Brief</h3>
+                        <p>Your professional campaign brief.</p>
+                    </div>
+
+                    <span class="ai-label">AI GENERATED</span>
+
+                </div>
+
+                <div id="briefOutput">
+
+                    <div class="empty-state">
+                        <div>✨</div>
+                        <h3>Your brief will appear here</h3>
+                        <p>Enter your campaign idea or use voice input.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MATCH ================= -->
+
+    <section id="match" class="page">
+
+        <div class="page-heading">
+
+            <div>
+                <h2>Smart Creator Match</h2>
+                <p>AI-powered recommendations based on your campaign.</p>
+            </div>
+
+            <span class="match-score">AI Matching Active</span>
+
+        </div>
+
+
+        <div class="match-banner">
+
+            <div class="match-icon">✨</div>
+
+            <div>
+                <h3>Best matches for Traditional Festival Campaign</h3>
+                <p>Creators ranked using niche, location, engagement and audience fit.</p>
+            </div>
+
+        </div>
+
+
+        <div class="match-grid">
+
+            <div class="match-card">
+
+                <div class="match-image">
+
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=600&q=80">
+
+                    <span>98% Match</span>
+
+                </div>
+
+                <div class="match-content">
+
+                    <h3>Ananya Rao</h3>
+                    <p>Traditional Fashion • Hyderabad</p>
+
+                    <div class="match-reasons">
+                        <span>✓ High engagement</span>
+                        <span>✓ Festival expertise</span>
+                        <span>✓ Verified license</span>
+                    </div>
+
+                    <button class="primary-btn"
+                            onclick="toggleShortlist('Ananya Rao')">
+                        + Add to Shortlist
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="match-card">
+
+                <div class="match-image">
+
+                    <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?auto=format&fit=crop&w=600&q=80">
+
+                    <span>94% Match</span>
+
+                </div>
+
+                <div class="match-content">
+
+                    <h3>Meghana Devi</h3>
+                    <p>Jewellery • Vijayawada</p>
+
+                    <div class="match-reasons">
+                        <span>✓ Bridal audience</span>
+                        <span>✓ Strong engagement</span>
+                        <span>✓ Verified license</span>
+                    </div>
+
+                    <button class="primary-btn"
+                            onclick="toggleShortlist('Meghana Devi')">
+                        + Add to Shortlist
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="match-card">
+
+                <div class="match-image">
+
+                    <img src="https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=600&q=80">
+
+                    <span>91% Match</span>
+
+                </div>
+
+                <div class="match-content">
+
+                    <h3>Sravani Reddy</h3>
+                    <p>Lifestyle • Guntur</p>
+
+                    <div class="match-reasons">
+                        <span>✓ Local audience</span>
+                        <span>✓ Culture content</span>
+                        <span>✓ Verified license</span>
+                    </div>
+
+                    <button class="primary-btn"
+                            onclick="toggleShortlist('Sravani Reddy')">
+                        + Add to Shortlist
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PIPELINE ================= -->
+
+    <section id="pipeline" class="page">
+
+        <div class="page-heading">
+
+            <div>
+                <h2>Campaign Pipeline</h2>
+                <p>Manage campaigns from creator selection to final approval.</p>
+            </div>
+
+            <button class="primary-btn" onclick="openBriefPage()">
+                + New Campaign
+            </button>
+
+        </div>
+
+
+        <div class="pipeline">
+
+            <div class="pipeline-column">
+
+                <div class="pipeline-header">
+                    <strong>Brief</strong>
+                    <span>2</span>
+                </div>
+
+                <div class="pipeline-card">
+                    <span class="campaign-tag">Fashion</span>
+                    <h3>Silk Saree Festival</h3>
+                    <p>Traditional Sankranti campaign</p>
+                    <div class="pipeline-footer">
+                        <span>👥 8 creators</span>
+                        <span>Today</span>
+                    </div>
+                </div>
+
+                <div class="pipeline-card">
+                    <span class="campaign-tag">Food</span>
+                    <h3>Festive Food Stories</h3>
+                    <p>Regional food campaign</p>
+                    <div class="pipeline-footer">
+                        <span>👥 6 creators</span>
+                        <span>Tomorrow</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pipeline-column">
+
+                <div class="pipeline-header">
+                    <strong>Creator Review</strong>
+                    <span>3</span>
+                </div>
+
+                <div class="pipeline-card">
+                    <span class="campaign-tag">Jewellery</span>
+                    <h3>Festival Jewellery</h3>
+                    <p>Gold jewellery showcase</p>
+
+                    <div class="pipeline-footer">
+                        <span>👥 12 creators</span>
+                        <span>2 days</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pipeline-column">
+
+                <div class="pipeline-header">
+                    <strong>Content Review</strong>
+                    <span>2</span>
+                </div>
+
+                <div class="pipeline-card">
+                    <span class="campaign-tag">Fashion</span>
+                    <h3>Traditional Collection</h3>
+                    <p>Final video review</p>
+
+                    <div class="revision-box">
+
+                        <strong>💬 Revision requested</strong>
+
+                        <p>Please include a wider product shot.</p>
+
+                        <button onclick="openRevision()">
+                            Open Chat
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="pipeline-column">
+
+                <div class="pipeline-header">
+                    <strong>Completed</strong>
+                    <span>5</span>
+                </div>
+
+                <div class="pipeline-card completed-card">
+                    <span class="campaign-tag">Festival</span>
+                    <h3>Diwali Jewellery</h3>
+                    <p>Campaign completed successfully</p>
+
+                    <div class="pipeline-footer">
+                        <span>✓ Approved</span>
+                        <span>Completed</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SHORTLIST ================= -->
+
+    <section id="shortlist" class="page">
+
+        <div class="page-heading">
+
+            <div>
+                <h2>My Shortlist</h2>
+                <p>Your saved creator recommendations.</p>
+            </div>
+
+        </div>
+
+        <div id="shortlistContainer" class="shortlist-container">
+
+            <div class="empty-state">
+
+                <div>❤️</div>
+
+                <h3>No creators shortlisted yet</h3>
+
+                <p>Go to Creator Discovery and add creators to your shortlist.</p>
+
+                <button class="primary-btn"
+                        onclick="showPage('discovery')">
+                    Discover Creators
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SETTINGS ================= -->
+
+    <section id="settings" class="page">
+
+        <div class="page-heading">
+
+            <div>
+                <h2>Settings</h2>
+                <p>Manage your Visionary AI workspace.</p>
+            </div>
+
+        </div>
+
+
+        <div class="settings-grid">
+
+            <div class="panel">
+
+                <h3>Workspace Settings</h3>
+
+                <div class="setting-row">
+                    <div>
+                        <strong>Workspace Name</strong>
+                        <small>Your brand workspace name</small>
+                    </div>
+
+                    <input type="text" value="Visionary Studio">
+                </div>
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>Email Notifications</strong>
+                        <small>Receive campaign updates</small>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span></span>
+                    </label>
+
+                </div>
+
+                <div class="setting-row">
+
+                    <div>
+                        <strong>AI Recommendations</strong>
+                        <small>Enable smart creator recommendations</small>
+                    </div>
+
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span></span>
+                    </label>
+
+                </div>
+
+                <button class="primary-btn"
+                        onclick="showToast('Settings saved successfully!')">
+                    Save Settings
+                </button>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h3>Demo Information</h3>
+
+                <div class="demo-info">
+
+                    <div>
+                        <span>Platform</span>
+                        <strong>Visionary AI</strong>
+                    </div>
+
+                    <div>
+                        <span>Version</span>
+                        <strong>1.0 MVP</strong>
+                    </div>
+
+                    <div>
+                        <span>Data Mode</span>
+                        <strong>Demo Data</strong>
+                    </div>
+
+                    <div>
+                        <span>AI Engine</span>
+                        <strong>Browser Simulation</strong>
+                    </div>
+
+                </div>
+
+                <div class="demo-warning">
+                    ⚠️ This hackathon MVP uses demo creator, license and campaign data.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- ================= CREATOR MODAL ================= -->
+
+<div class="modal" id="creatorModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close" onclick="closeModal('creatorModal')">
+            ×
+        </button>
+
+        <div id="creatorModalContent"></div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= REVISION MODAL ================= -->
+
+<div class="modal" id="revisionModal">
+
+    <div class="modal-box">
+
+        <button class="modal-close" onclick="closeModal('revisionModal')">
+            ×
+        </button>
+
+        <h2>Campaign Revision Chat</h2>
+
+        <p class="muted">
+            Discuss content changes with the creator.
+        </p>
+
+        <div class="chat-area">
+
+            <div class="chat-message received">
+                <strong>Creator</strong>
+                <p>I've uploaded the first version of the festival video.</p>
+            </div>
+
+            <div class="chat-message sent">
+                <strong>Brand</strong>
+                <p>Please include a wider product shot.</p>
+            </div>
+
+            <div class="chat-message received">
+                <strong>Creator</strong>
+                <p>Sure! I'll update it today.</p>
+            </div>
+
+        </div>
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="revisionMessage"
+                placeholder="Write a message..."
+            >
+
+            <button onclick="sendRevisionMessage()">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div id="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
